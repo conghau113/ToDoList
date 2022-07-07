@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="styleNEW.css">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center mt-3 text-primary font-weight-bold">WORK TO-DOS</h1>
+    <div class="d-flex align-items-sm-center justify-content-center">
+        <ul class="mt-3 text-info font-weight-light">
+            <li>Enter text into the input field to add items to your list.</li>
+            <li>Click the item to mark it as complete.</li>
+            <li>Click the "X" or bouble click element to remove the item from your list.</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-12 input_item">
+            <input id="userInput" type="text" placeholder="New item..." maxlength="120">
+            <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+        </div>
+    </div>
+
+    <!-- items list -->
+    <div class="row">
+    </div>
+    <div class="listItems">
+        <ul id="ul_item" class="d-flex flex-column align-items-sm-center">
+        </ul>
+    </div>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>
